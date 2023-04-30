@@ -1,13 +1,13 @@
 
-SERVER = ms@fs01.haj.ipfire.org
-DIRECTORY = /srv/www/horneburger-blasorchester.de/www
+#SERVER =
+#DIRECTORY =
 
 JEKYLL = bundle exec jekyll
 
-LOGO	= assets/img/hbo.svg
+# LOGO	=
 
 HASH	:= \#
-COLOR	= $(HASH)c20d52
+# COLOR	= $(HASH)
 
 ASSETS = \
 	assets/fonts/fa-brands-400.eot \
