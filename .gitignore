@@ -1,0 +1,11 @@
+/.bundle
+/_site
+/assets/fonts
+/assets/img/apple-touch-icon-*-precomposed.png
+/assets/img/favicon.ico
+/assets/img/logo.png
+/assets/img/navbar-icon.png
+/vendor
+.DS_Store
+.sass-cache
+.jekyll-metadata

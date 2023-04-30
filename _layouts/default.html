@@ -1,0 +1,128 @@
+---
+---
+<!DOCTYPE html>
+<html class="no-js" lang="de">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>{% if page.title %}{{ page.title }} -{% endif %} Solaververein am CGD</title>
+
+		<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+    </head>
+
+	<body>
+		<nav class="navbar is-primary" role="navigation" aria-label="dropdown navigation">
+			<div class="container">
+				<div class="navbar-brand">
+					<a class="navbar-item" href="/">
+						<span class="icon-text">
+							<span class="icon">
+								<img src="" alt="Logo">
+							</span>
+							<strong>
+								Solarverein am CGD
+							</strong>
+						</span>
+					</a>
+
+					<a role="button" class="navbar-burger" aria-label="menu"
+							aria-expanded="false" data-target="navbarMainMenu">
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+					</a>
+				</div>
+
+				<div id="navbarMainMenu" class="navbar-menu">
+					<div class="navbar-end">
+						<div class="navbar-item has-dropdown is-hoverable">
+							<a class="navbar-link" href="/solarverein">
+							  	Verein
+							</a>
+
+							<div class="navbar-dropdown">
+								<a class="navbar-item" href="/verein/chronik">
+									Chronik
+								</a>
+								<a class="navbar-item" href="/verein/vorstand">
+									Vorstand
+								</a>
+								<a class="navbar-item" href="/verein/gründungsmitglieder">
+									Gründungsmitglieder
+								</a>
+								<a class="navbar-item" href="/verein/satzung">
+									Satzung
+								</a>
+							</div>
+						</div>
+
+						<a class="navbar-item" href="/chronik">
+							Solar-AG
+						</a>
+
+						<div class="navbar-item has-dropdown is-hoverable">
+							<a class="navbar-link" href="/photovoltaikanlage">
+							  	Photovoltaikanlage
+							</a>
+
+							<div class="navbar-dropdown">
+								<a class="navbar-item" href="/pvanlage/planung">
+									Planung
+								</a>
+								<a class="navbar-item" href="/pvanlage/fertigstellung">
+									Fertigstellung
+								</a>
+								<a class="navbar-item" href="/pvanlage/überwachung">
+									Überwachung
+								</a>
+							</div>
+						</div>
+
+
+						<a class="navbar-item" href="/mitmachen">
+							Solarlexikon
+						</a>
+
+						<a class="navbar-item" href="/kontakt">
+							News
+						</a>
+
+						<a class="navbar-item" href="/kontakt">
+							Termine
+						</a>
+
+						<a class="navbar-item" href="/kontakt">
+							Mitgliedschaft
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		{{ content }}
+
+		<footer class="footer">
+			<div class="container">
+				<div class="content has-text-centered">
+					<p>
+						&copy; Solarverein am Comenius-Gymnasium in Datteln e.V.
+
+						&bull;
+
+						<a href="/impressum">
+							Kontakt
+						</a>
+
+						&bull;
+
+						<a href="/impressum">
+							Impressum
+						</a>
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="/assets/js/custom.js"></script>
+	</body>
+</html>

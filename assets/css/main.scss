@@ -1,0 +1,35 @@
+---
+---
+
+$container-max-width:			1152px;
+
+// Colour Palette
+$background:					#fafafa;
+$primary:						#ea9d19;
+$success:						#2aad7b;
+
+// Use the primary colour for links
+$link:							#ffa200;
+
+// Fonts
+$family-sans-serif:				"Helvetica Neue", Helvetica, Arial, sans-serif;
+
+/*
+	Import Bulma
+*/
+@import "bulma/sass/base/_all";
+@import "bulma/sass/components/_all";
+@import "bulma/sass/elements/_all";
+@import "bulma/sass/form/_all";
+@import "bulma/sass/grid/_all";
+@import "bulma/sass/helpers/_all";
+@import "bulma/sass/layout/_all";
+@import "bulma/sass/utilities/_all";
+
+/*
+	Import Font Awesome
+*/
+$fa-font-path:					"../fonts";
+
+@import "Font-Awesome/scss/fontawesome";
+@import "Font-Awesome/scss/brands";
