@@ -29,3 +29,50 @@ title: Startseite
 		</p>
 	</div>
 </section>
+
+<section class="section">
+
+    <canvas id="solar"></canvas>
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script>
+		// Sample CSV data (replace with your actual data)
+		const csvData = `Year;Value;Day
+		2010;10;1
+		2011;15;2
+		2012;20;3
+		2013;25;5
+		2014;30;3`;
+
+		// Parse CSV data into an array of objects
+		const rows = csvData.split('\n').slice(1).map(row => {
+			const [Year, Value, Day] = row.split(';');
+			return { Year, Value: parseInt(Value), Day: parseInt(Day) };
+		});
+
+		// Extract data for the chart
+		const labels = rows.map(row => row.Year);
+		const data = rows.map(row => row.Value);
+
+		// Get the canvas element
+		const ctx = document.getElementById('solar').getContext('2d');
+
+		// Create a new Chart instance
+		const solar = new Chart(ctx, {
+			type: 'bar', // Change chart type as needed (e.g., 'bar', 'pie')
+			data: {
+				labels: labels,
+				datasets: [{
+					label: 'CSV Data',
+					data: data,
+					fill: false, // Remove the area under the line for line charts
+					borderColor: 'rgb(75, 192, 192)', // Line color
+					borderWidth: 2 // Line width
+				}]
+			},
+			options: {
+				// Customize chart options as needed
+			}
+		});
+	</script>
+</section>
